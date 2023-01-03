@@ -23,12 +23,14 @@
 }
 @keyframes formBg2{
     0%{
-        backdrop-filter: grayscale(1);
+        backdrop-filter: grayscale(1) blur(0px);
     }
-    50%{
-        backdrop-filter: grayscale(0);
-    }
+    /* 50%{
+        backdrop-filter: grayscale(.5) blur(1.5px);
+        
+    } */
     100%{
-        backdrop-filter: blur(.5px);
+        background-color: rgba(0, 0, 0, 0.137);
+        backdrop-filter: grayscale(0) blur(3px);
     }
 }
