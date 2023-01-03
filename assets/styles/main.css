@@ -1,7 +1,8 @@
 :root {
   --color-primary: black;
-  --color-secondary: orange;
-  --color-font: white;
+  --color-secondary: rgb(255, 153, 0);
+  --color-secondary-hover: #c78201;
+  --color-font: rgb(242, 242, 242);
 }
 
 * {
@@ -24,6 +25,35 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+  font-size: 1.5em;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-font);
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-font);
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-font);
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-font);
+  opacity: 1;
+  /* Firefox */
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -87,7 +117,6 @@ main .form-wrap .form {
 }
 
 main .form-wrap .form .mode-wrap {
-  background-color: green;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,12 +125,60 @@ main .form-wrap .form .mode-wrap {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  display: none;
 }
 
 main .form-wrap .form .mode-wrap .mode {
-  background-color: red;
   margin-right: 25px;
+  cursor: pointer;
+  color: var(--color-font);
+  text-transform: uppercase;
+  position: relative;
+}
+
+main .form-wrap .form .mode-wrap .mode::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  left: 0;
+  bottom: 0px;
+  background: var(--color-secondary-hover);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main .form-wrap .form .mode-wrap .mode:hover::before {
+  width: 100%;
+}
+
+main .form-wrap .form .mode-wrap .mode-active {
+  position: relative;
+}
+
+main .form-wrap .form .mode-wrap .mode-active::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  background: var(--color-secondary);
+}
+
+main .form-wrap .form .input-container {
+  padding: 60px 10px;
+}
+
+main .form-wrap .form .input-container input {
+  color: var(--color-font);
+  padding: 10px;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 70px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-font);
 }
 
 @-webkit-keyframes grayScale {
@@ -162,31 +239,33 @@ main .form-wrap .form .mode-wrap .mode {
 
 @-webkit-keyframes formBg2 {
   0% {
-    -webkit-backdrop-filter: grayscale(1);
-            backdrop-filter: grayscale(1);
+    -webkit-backdrop-filter: grayscale(1) blur(0px);
+            backdrop-filter: grayscale(1) blur(0px);
   }
-  50% {
-    -webkit-backdrop-filter: grayscale(0);
-            backdrop-filter: grayscale(0);
-  }
+  /* 50%{
+        backdrop-filter: grayscale(.5) blur(1.5px);
+        
+    } */
   100% {
-    -webkit-backdrop-filter: blur(0.5px);
-            backdrop-filter: blur(0.5px);
+    background-color: rgba(0, 0, 0, 0.137);
+    -webkit-backdrop-filter: grayscale(0) blur(3px);
+            backdrop-filter: grayscale(0) blur(3px);
   }
 }
 
 @keyframes formBg2 {
   0% {
-    -webkit-backdrop-filter: grayscale(1);
-            backdrop-filter: grayscale(1);
+    -webkit-backdrop-filter: grayscale(1) blur(0px);
+            backdrop-filter: grayscale(1) blur(0px);
   }
-  50% {
-    -webkit-backdrop-filter: grayscale(0);
-            backdrop-filter: grayscale(0);
-  }
+  /* 50%{
+        backdrop-filter: grayscale(.5) blur(1.5px);
+        
+    } */
   100% {
-    -webkit-backdrop-filter: blur(0.5px);
-            backdrop-filter: blur(0.5px);
+    background-color: rgba(0, 0, 0, 0.137);
+    -webkit-backdrop-filter: grayscale(0) blur(3px);
+            backdrop-filter: grayscale(0) blur(3px);
   }
 }
 /*# sourceMappingURL=main.css.map */
