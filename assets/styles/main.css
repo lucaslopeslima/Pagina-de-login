@@ -125,14 +125,16 @@ main .form-wrap .form .mode-wrap {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  opacity: 0;
-  -webkit-animation: opacityEffect 1s ease-in-out 2s forwards;
-          animation: opacityEffect 1s ease-in-out 2s forwards;
+  opacity: 1;
 }
 
 main .form-wrap .form .mode-wrap .mode {
   margin-right: 25px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: var(--color-font);
   text-transform: uppercase;
   position: relative;
@@ -168,14 +170,12 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   background: var(--color-secondary);
 }
 
-main .form-wrap .form .input-container {
-  opacity: 0;
-  -webkit-animation: opacityEffect 1s ease-in-out 3s forwards;
-          animation: opacityEffect 1s ease-in-out 3s forwards;
+main .form-wrap .form .mode-content .sing-in-content .input-container {
+  opacity: 1;
   padding: 60px 10px;
 }
 
-main .form-wrap .form .input-container input {
+main .form-wrap .form .mode-content .sing-in-content .input-container input {
   color: var(--color-font);
   padding: 10px;
   width: 100%;
