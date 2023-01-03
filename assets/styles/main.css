@@ -74,8 +74,8 @@ main .form-wrap {
   width: 97%;
   max-width: 500px;
   height: 700px;
-  -webkit-animation: modalBg .7s ease-in-out 1.7s forwards;
-          animation: modalBg .7s ease-in-out 1.7s forwards;
+  -webkit-animation: modalBg 1s ease-in-out 1s forwards;
+          animation: modalBg 1s ease-in-out 1s forwards;
 }
 
 @-webkit-keyframes grayScale {
