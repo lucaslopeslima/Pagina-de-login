@@ -1,0 +1,25 @@
+:root{
+    --color-primary: black;
+    --color-secondary: orange;
+    --color-font: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    line-height: 1.5; //Melhora acessibilidade para pessoas com dislexia
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
