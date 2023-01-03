@@ -24,10 +24,19 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-body{
+/* body{
     background-image: url('../img/bg/pexels-photo-1141853.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    animation: grayScale 1s ease-in-out 2s forwards
+} */
+img.bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    
 }
 
 
