@@ -125,6 +125,9 @@ main .form-wrap .form .mode-wrap {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
+  opacity: 0;
+  -webkit-animation: opacityEffect 1s ease-in-out 2s forwards;
+          animation: opacityEffect 1s ease-in-out 2s forwards;
 }
 
 main .form-wrap .form .mode-wrap .mode {
@@ -166,6 +169,9 @@ main .form-wrap .form .mode-wrap .mode-active::before {
 }
 
 main .form-wrap .form .input-container {
+  opacity: 0;
+  -webkit-animation: opacityEffect 1s ease-in-out 3s forwards;
+          animation: opacityEffect 1s ease-in-out 3s forwards;
   padding: 60px 10px;
 }
 
@@ -266,6 +272,24 @@ main .form-wrap .form .input-container input {
     background-color: rgba(0, 0, 0, 0.137);
     -webkit-backdrop-filter: grayscale(0) blur(3px);
             backdrop-filter: grayscale(0) blur(3px);
+  }
+}
+
+@-webkit-keyframes opacityEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

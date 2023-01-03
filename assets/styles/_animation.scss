@@ -34,3 +34,11 @@
         backdrop-filter: grayscale(0) blur(3px);
     }
 }
+@keyframes opacityEffect{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
