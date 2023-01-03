@@ -44,6 +44,40 @@ img.bg {
   -o-object-position: center;
      object-position: center;
   position: absolute;
+  -webkit-animation: grayScale .7s ease-in-out 1s forwards;
+          animation: grayScale .7s ease-in-out 1s forwards;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .form-wrap {
+  background-image: url("../img/bg/pexels-photo-1141853.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 97%;
+  max-width: 500px;
+  height: 700px;
+  -webkit-box-shadow: 0px 15px 25px 5px #00000096;
+          box-shadow: 0px 15px 25px 5px #00000096;
+  -webkit-animation: modalBg .7s ease-in-out 1.7s forwards;
+          animation: modalBg .7s ease-in-out 1.7s forwards;
 }
 
 @-webkit-keyframes grayScale {
@@ -57,6 +91,26 @@ img.bg {
   to {
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
+  }
+}
+
+@-webkit-keyframes modalBg {
+  /* from{
+        backdrop-filter: graysacle(1);
+    } */
+  to {
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+  }
+}
+
+@keyframes modalBg {
+  /* from{
+        backdrop-filter: graysacle(1);
+    } */
+  to {
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,3 +3,12 @@
         filter: grayscale(1);
     }
 }
+
+@keyframes modalBg{
+    /* from{
+        backdrop-filter: graysacle(1);
+    } */
+    to{
+        backdrop-filter: blur(1px);
+    }
+}
