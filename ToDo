@@ -1,6 +1,7 @@
 ## 💻 Projeto
 
 [ ] Criar uma pagina de Log-in
+[ ] Criar uma pagina de Registro
 [ ] Criar o banco de dados de usuários
 [ ] Conectar o DB à pagina de log-in
 [ ] Validar os campos com JS
