@@ -29,4 +29,10 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+body {
+  background-image: url("../img/bg/pexels-photo-1141853.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*# sourceMappingURL=main.css.map */
