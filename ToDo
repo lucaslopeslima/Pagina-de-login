@@ -4,7 +4,11 @@
 [ ] Criar uma pagina de Registro
 [ ] Criar o banco de dados de usuários
 [ ] Conectar o DB à pagina de log-in
+[ ] Setar, inicialmente, usuario ADMIN senha ADMIN e testar logica.
+[ ] Ao carregar a pagina, buscar nome de usuário no localstorage
 [ ] Validar os campos com JS
+[ ] Verificar se o botão lembrar usuário está ligado
+    [ ] Salvar nome de usuário no localstorage
 [ ] Registrar novos usuários
 [ ] Logar com o usuário
 [ ] 
