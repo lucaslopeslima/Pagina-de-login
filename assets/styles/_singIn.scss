@@ -38,6 +38,17 @@
                 z-index: 1;
             }
         }
+        .submit-btn{
+            padding: 15px;
+            text-transform: uppercase;
+            background-color: var(--color-secondary);
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            &:
+        }
         
     }
 }
