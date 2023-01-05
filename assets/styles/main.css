@@ -1,8 +1,8 @@
 :root {
   --color-primary: black;
-  --color-secondary: rgb(255, 153, 0);
+  --color-secondary: #ff9900;
   --color-secondary-hover: #c78201;
-  --color-secondary-hover-btn: #ffb62e;
+  --color-secondary-hover-btn: #fca910;
   --color-font: rgb(242, 242, 242);
   --font-primary: 'Roboto', sans-serif;
   --color-label: #e3e3e3;
@@ -177,6 +177,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
 .sing-in-content .input-container {
   opacity: 1;
   padding: 60px 10px;
+  background-color: green;
 }
 
 .sing-in-content .input-container .input {
@@ -216,30 +217,35 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   z-index: 1;
 }
 
-.sing-in-content .input-container .submit-btn {
+.sing-in-content .submit-btn {
   padding: 15px;
   text-transform: uppercase;
   background-color: var(--color-secondary);
   text-align: center;
   font-weight: bold;
   color: white;
+  font-size: 1.3rem;
   border-radius: 5px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.523);
+          box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.523);
 }
 
-.sing-in-content .input-container .submit-btn:hover {
-  background-color: var(--color-secondary-hover-btn);
+.sing-in-content .submit-btn:hover {
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.311);
+          box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.311);
+  letter-spacing: 2px;
 }
 
-.sing-in-content .input-container .submit-btn:active {
-  -webkit-box-shadow: inset 0px 0px 12px 2px #0000004f;
-          box-shadow: inset 0px 0px 12px 2px #0000004f;
+.sing-in-content .submit-btn:active {
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.156);
+          box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.156);
 }
 
 @-webkit-keyframes grayScale {
