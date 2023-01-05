@@ -55,10 +55,14 @@
                     width: 25px;
                     height: 25px;
                     border-radius: 50%;
-                    background-color: rgb(60, 162, 251);
+                    background-color: #3ca2fb;
                     border-top: 2px solid var(--color-secondary);
                     border-bottom: 2px solid var(--color-secondary);
                 }
+            }
+            .remember-user-name-active{
+                justify-content: flex-end;
+                background-color: #67c38f;
             }
         }
         
