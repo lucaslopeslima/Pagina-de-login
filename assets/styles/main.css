@@ -177,7 +177,6 @@ main .form-wrap .form .mode-wrap .mode-active::before {
 .sing-in-content .input-container {
   opacity: 1;
   padding: 60px 10px;
-  background-color: green;
 }
 
 .sing-in-content .input-container .input {
@@ -192,6 +191,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   margin-bottom: 70px;
   outline: none;
   background-color: transparent;
+  background-color: green;
   border: none;
   border-bottom: 2px solid var(--color-font);
   z-index: 2;
@@ -215,6 +215,38 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   -webkit-transition: .4s;
   transition: .4s;
   z-index: 1;
+}
+
+.sing-in-content .input-container .option {
+  background-color: red;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sing-in-content .input-container .option .remember-user-name {
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sing-in-content .input-container .option .remember-user-name .sphere {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: blue;
 }
 
 .sing-in-content .submit-btn {
