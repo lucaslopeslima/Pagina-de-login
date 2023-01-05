@@ -3,7 +3,8 @@
     --color-secondary: #ff9900;
     --color-secondary-hover: #c78201;
     --color-secondary-hover-btn: #fca910;
-    --color-font: rgb(242, 242, 242);
+    --color-font: #f2f2f2;
+    --color-font-sub: #e2e2e2;
     --font-primary: 'Roboto', sans-serif;
     --color-label: #e3e3e3;
 }
@@ -17,6 +18,7 @@ html, body{
     height: 100%;
     line-height: 1.5; //Melhora acessibilidade para pessoas com dislexia
     font-family: var(--font-primary);
+    color: var(--color-font);
 }
 img, picture, video, canvas, svg {
     display: block;
