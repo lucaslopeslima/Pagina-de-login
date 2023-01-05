@@ -274,7 +274,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   color: var(--color-font);
 }
 
-.sing-in-content .submit-btn {
+.sing-in-content .logar-btn {
   padding: 15px;
   text-transform: uppercase;
   background-color: var(--color-secondary);
@@ -294,13 +294,13 @@ main .form-wrap .form .mode-wrap .mode-active::before {
           box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.523);
 }
 
-.sing-in-content .submit-btn:hover {
+.sing-in-content .logar-btn:hover {
   -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.311);
           box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.311);
   letter-spacing: 2px;
 }
 
-.sing-in-content .submit-btn:active {
+.sing-in-content .logar-btn:active {
   -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.156);
           box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.156);
 }
