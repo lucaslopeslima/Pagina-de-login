@@ -2,6 +2,7 @@
   --color-primary: black;
   --color-secondary: rgb(255, 153, 0);
   --color-secondary-hover: #c78201;
+  --color-secondary-hover-btn: #ffb62e;
   --color-font: rgb(242, 242, 242);
   --font-primary: 'Roboto', sans-serif;
   --color-label: #e3e3e3;
@@ -224,6 +225,21 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.sing-in-content .input-container .submit-btn:hover {
+  background-color: var(--color-secondary-hover-btn);
+}
+
+.sing-in-content .input-container .submit-btn:active {
+  -webkit-box-shadow: inset 0px 0px 12px 2px #0000004f;
+          box-shadow: inset 0px 0px 12px 2px #0000004f;
 }
 
 @-webkit-keyframes grayScale {
