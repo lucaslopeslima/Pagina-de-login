@@ -15,7 +15,7 @@
                 margin-bottom: 70px;
                 outline: none;
                 background-color: transparent;
-                background-color: green;
+                //background-color: green;
                 border: none;
                 border-bottom: 2px solid var(--color-font);
                 z-index: 2;
@@ -39,26 +39,42 @@
             }
         }
         .option{
-            background-color: red;
+            //background-color: red;
             transform: translateY(-50px);display: flex;
             justify-content: flex-end;
             .remember-user-name{
                 width: 50px;
                 height: 20px;
                 border-radius: 10px;
-                background-color: gray;
+                background-color: rgb(171, 171, 171);
+                border: 2px solid var(--color-secondary);
                 display: flex;
                 align-items: center;
+                //justify-content: flex-end;
                 .sphere{
                     width: 25px;
                     height: 25px;
                     border-radius: 50%;
-                    background-color: blue;
+                    background-color: rgb(60, 162, 251);
+                    border-top: 2px solid var(--color-secondary);
+                    border-bottom: 2px solid var(--color-secondary);
                 }
             }
         }
         
         //background-color: green;
+    }
+    .dont-have-acc{
+        //background-color: red;
+        color: var(--color-font-sub);
+        text-align: end;
+        font-style: italic;
+        transform: translateY(-50px);
+        cursor: pointer;
+        transition: .2s ease;
+        &:hover{
+            color: var(--color-font);
+        }
     }
     .submit-btn{
         padding: 15px;

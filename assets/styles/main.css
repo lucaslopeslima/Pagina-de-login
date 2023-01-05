@@ -3,7 +3,8 @@
   --color-secondary: #ff9900;
   --color-secondary-hover: #c78201;
   --color-secondary-hover-btn: #fca910;
-  --color-font: rgb(242, 242, 242);
+  --color-font: #f2f2f2;
+  --color-font-sub: #e2e2e2;
   --font-primary: 'Roboto', sans-serif;
   --color-label: #e3e3e3;
 }
@@ -20,6 +21,7 @@ html, body {
   height: 100%;
   line-height: 1.5;
   font-family: var(--font-primary);
+  color: var(--color-font);
 }
 
 img, picture, video, canvas, svg {
@@ -191,7 +193,6 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   margin-bottom: 70px;
   outline: none;
   background-color: transparent;
-  background-color: green;
   border: none;
   border-bottom: 2px solid var(--color-font);
   z-index: 2;
@@ -218,7 +219,6 @@ main .form-wrap .form .mode-wrap .mode-active::before {
 }
 
 .sing-in-content .input-container .option {
-  background-color: red;
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
   display: -webkit-box;
@@ -233,7 +233,8 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   width: 50px;
   height: 20px;
   border-radius: 10px;
-  background-color: gray;
+  background-color: #ababab;
+  border: 2px solid var(--color-secondary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +247,24 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #3ca2fb;
+  border-top: 2px solid var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.sing-in-content .dont-have-acc {
+  color: var(--color-font-sub);
+  text-align: end;
+  font-style: italic;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.sing-in-content .dont-have-acc:hover {
+  color: var(--color-font);
 }
 
 .sing-in-content .submit-btn {
