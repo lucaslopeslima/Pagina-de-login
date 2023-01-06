@@ -230,10 +230,10 @@ main .form-wrap .form .mode-wrap .mode-active::before {
 }
 
 .sing-in-content .input-container .option .remember-user-name {
-  width: 50px;
+  width: 45px;
   height: 20px;
   border-radius: 10px;
-  background-color: #ababab;
+  background-color: #4a4a4a;
   border: 2px solid var(--color-secondary);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,16 +247,17 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #3ca2fb;
-  border-top: 2px solid var(--color-secondary);
-  border-bottom: 2px solid var(--color-secondary);
+  background-color: #479de9;
+  border: 2px solid var(--color-secondary);
+  margin-left: -2px;
+  margin-right: -3px;
 }
 
 .sing-in-content .input-container .option .remember-user-name-active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #67c38f;
+  background-color: #c3ac67;
 }
 
 .sing-in-content .dont-have-acc {
