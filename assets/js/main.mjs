@@ -41,13 +41,19 @@ singUp.addEventListener('click', () => {
 
 //Remember user
 const sphereToggle = document.querySelector('.remember-user-name')
+function rememberUser() {
+    if (localStorage.getItem('userName') != '') {
+        sphereToggle.className += ' remember-user-name-active'
+    }
+}
+rememberUser()
 //console.log(sphereToggle)
 sphereToggle.addEventListener('click', () => {
     sphereToggle.classList.toggle('remember-user-name-active')
 })
 //////////////
 const logarBtn = document.querySelector('.logar-btn')
-const inputEmail = document.querySelector('#email')
+const inputEmail = document.querySelector('#user')
 inputEmail.value = localStorage.getItem('userName')
 //console.log(inputEmail)
 //console.log(logarBtn)
