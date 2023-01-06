@@ -4,15 +4,27 @@ console.log('JS on')
 
 const singMode = document.querySelectorAll('.mode')
 const singIn = document.querySelector('#sing-in')
+const singInContent = document.querySelector('.sing-in-content')
 const singUp = document.querySelector('#sing-up')
-console.log(singMode)
+const singUpContent = document.querySelector('.sing-up-content')
+//console.log(singMode)
 singIn.addEventListener('click', () => {
     singUp.className = singUp.className.replace('mode-active', '')
     singIn.className += ' mode-active'
+    singUpContent.style.display = 'none'
+    singInContent.style.display = 'block'
+    /* singUpContent.style.visibility = 'hidden'
+    singInContent.style.visibility = 'visible' */
+    
+    
 })
 singUp.addEventListener('click', () => {
     singIn.className = singUp.className.replace('mode-active', '')
     singUp.className += ' mode-active'
+    singInContent.style.display = 'none'
+    singUpContent.style.display = 'block'
+    /* singInContent.style.visibility = 'hidden'
+    singUpContent.style.visibility = 'visible' */
 })
 
 
