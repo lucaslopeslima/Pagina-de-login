@@ -42,7 +42,15 @@
             //background-color: red;
             transform: translateY(-50px);display: flex;
             justify-content: flex-end;
+            p{
+                margin-right: 15px;
+                font-style: italic;
+                &:hover{
+                    color: var(--color-font);
+                }
+            }
             .remember-user-name{
+                margin-top: 2px;
                 width: 45px;
                 height: 20px;
                 border-radius: 10px;
@@ -73,6 +81,7 @@
     }
     .dont-have-acc{
         //background-color: red;
+        margin-right: 70px;
         color: var(--color-font-sub);
         text-align: end;
         font-style: italic;
@@ -83,7 +92,7 @@
             color: var(--color-font);
         }
     }
-    .logar-btn{
+    .logar-btn, .create-btn{
         padding: 15px;
         text-transform: uppercase;
         background-color: var(--color-secondary);
