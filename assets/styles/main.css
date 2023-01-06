@@ -176,16 +176,20 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   background: var(--color-secondary);
 }
 
-.sing-in-content .input-container {
+main .form-wrap .form .mode-content {
+  position: relative;
+}
+
+.sing-in-content .input-container, .sing-up-content .input-container {
   opacity: 1;
   padding: 60px 10px;
 }
 
-.sing-in-content .input-container .input {
+.sing-in-content .input-container .input, .sing-up-content .input-container .input {
   position: relative;
 }
 
-.sing-in-content .input-container .input input {
+.sing-in-content .input-container .input input, .sing-up-content .input-container .input input {
   position: relative;
   color: var(--color-font);
   width: 100%;
@@ -199,7 +203,8 @@ main .form-wrap .form .mode-wrap .mode-active::before {
 }
 
 .sing-in-content .input-container .input input:focus ~ label,
-.sing-in-content .input-container .input input:valid ~ label {
+.sing-in-content .input-container .input input:valid ~ label, .sing-up-content .input-container .input input:focus ~ label,
+.sing-up-content .input-container .input input:valid ~ label {
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
   font-size: .9em;
@@ -207,7 +212,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   color: var(--color-label);
 }
 
-.sing-in-content .input-container .input label {
+.sing-in-content .input-container .input label, .sing-up-content .input-container .input label {
   color: var(--color-font);
   font-size: 1.2em;
   position: absolute;
@@ -218,7 +223,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   z-index: 1;
 }
 
-.sing-in-content .input-container .option {
+.sing-in-content .input-container .option, .sing-up-content .input-container .option {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
   display: -webkit-box;
@@ -229,7 +234,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
           justify-content: flex-end;
 }
 
-.sing-in-content .input-container .option .remember-user-name {
+.sing-in-content .input-container .option .remember-user-name, .sing-up-content .input-container .option .remember-user-name {
   width: 45px;
   height: 20px;
   border-radius: 10px;
@@ -243,7 +248,7 @@ main .form-wrap .form .mode-wrap .mode-active::before {
           align-items: center;
 }
 
-.sing-in-content .input-container .option .remember-user-name .sphere {
+.sing-in-content .input-container .option .remember-user-name .sphere, .sing-up-content .input-container .option .remember-user-name .sphere {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -253,14 +258,14 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   margin-right: -3px;
 }
 
-.sing-in-content .input-container .option .remember-user-name-active {
+.sing-in-content .input-container .option .remember-user-name-active, .sing-up-content .input-container .option .remember-user-name-active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #c3ac67;
 }
 
-.sing-in-content .dont-have-acc {
+.sing-in-content .dont-have-acc, .sing-up-content .dont-have-acc {
   color: var(--color-font-sub);
   text-align: end;
   font-style: italic;
@@ -271,11 +276,11 @@ main .form-wrap .form .mode-wrap .mode-active::before {
   transition: .2s ease;
 }
 
-.sing-in-content .dont-have-acc:hover {
+.sing-in-content .dont-have-acc:hover, .sing-up-content .dont-have-acc:hover {
   color: var(--color-font);
 }
 
-.sing-in-content .logar-btn {
+.sing-in-content .logar-btn, .sing-up-content .logar-btn {
   padding: 15px;
   text-transform: uppercase;
   background-color: var(--color-secondary);
@@ -295,15 +300,19 @@ main .form-wrap .form .mode-wrap .mode-active::before {
           box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.523);
 }
 
-.sing-in-content .logar-btn:hover {
+.sing-in-content .logar-btn:hover, .sing-up-content .logar-btn:hover {
   -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.311);
           box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.311);
   letter-spacing: 2px;
 }
 
-.sing-in-content .logar-btn:active {
+.sing-in-content .logar-btn:active, .sing-up-content .logar-btn:active {
   -webkit-box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.156);
           box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.156);
+}
+
+.sing-up-content {
+  display: none;
 }
 
 @-webkit-keyframes grayScale {
