@@ -9,6 +9,7 @@
 [ ] Validar os campos com JS
 [x] Verificar se o botão lembrar usuário está ligado
     [x] Salvar nome de usuário no localstorage
+    [ ] Condicionar o local storage apenas após a validação do campo.
 [x] Registrar novos usuários
 [x] Logar com o usuário
 [ ] 
