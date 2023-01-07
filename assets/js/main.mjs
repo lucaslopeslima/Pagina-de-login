@@ -110,3 +110,44 @@ logarAcc.addEventListener('click', () => {
     }
     console.log('Usuário ou senha incorretos.')
 })
+
+
+//Validate fileds////////////////////////////////////
+
+logarBtn.addEventListener("click", validate);
+
+function validate(e) {
+    e.preventDefault();
+    
+  let valid = true;
+
+  if (!logUser.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("visible");
+    logUser.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+  return valid;
+}
+
+
+/* const submit = document.getElementById("submit");
+
+submit.addEventListener("click", validate);
+
+function validate(e) {
+  e.preventDefault();
+
+  const firstNameField = document.getElementById("firstname");
+  let valid = true;
+
+  if (!firstNameField.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("visible");
+    firstNameField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+  return valid;
+} */
