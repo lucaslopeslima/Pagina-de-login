@@ -1,5 +1,6 @@
 console.log('JS on')
-
+let user = ''
+let password = ''
 ///////Handle Buttons ///////
 
 const singMode = document.querySelectorAll('.mode')
@@ -77,6 +78,8 @@ function createUser() {
         return
     }
     console.log('deu certo')
+    user = newUserName.value
+    password = newUserPassword.value
 }
 function verifyPassword() {
     if (newUserPassword.value !== confirmPassword.value) {
