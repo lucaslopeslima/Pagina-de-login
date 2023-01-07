@@ -75,8 +75,6 @@ logarBtn.addEventListener('click', () => {
     }
 })
 
-
-
 //Create User //////////////////////////////////////
 const createUserBtn = document.querySelector('.create-btn')
 const newUserName = document.querySelector('#create-user')
