@@ -39,26 +39,21 @@ singUp.addEventListener('click', () => {
 } */
 
 
-//Remember user
+//Remember user////////////////////////////////////
 const sphereToggle = document.querySelector('.remember-user-name')
 function rememberUser() {
-    if (localStorage.getItem('userName') != '') {
+    if (localStorage.getItem('userName')) {
         sphereToggle.className += ' remember-user-name-active'
     }
 }
 rememberUser()
-//console.log(sphereToggle)
 sphereToggle.addEventListener('click', () => {
     sphereToggle.classList.toggle('remember-user-name-active')
 })
-//////////////
 const logarBtn = document.querySelector('.logar-btn')
 const inputEmail = document.querySelector('#user')
 inputEmail.value = localStorage.getItem('userName')
-//console.log(inputEmail)
-//console.log(logarBtn)
 logarBtn.addEventListener('click', () => {
-    //console.log(sphereToggle.classList)
     if (sphereToggle.classList.contains('remember-user-name-active')) {
         //console.log('tem remember-user-name-active')
         localStorage.setItem('userName', inputEmail.value);
@@ -67,3 +62,5 @@ logarBtn.addEventListener('click', () => {
         //console.log('não tem remember-user-name-active')
     }
 })
+
+
