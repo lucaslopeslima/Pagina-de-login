@@ -99,3 +99,16 @@ function verifyPassword() {
     
 }
 
+
+//Log User /////////////////////////////////////////
+const logarAcc = document.querySelector('.logar-btn')
+const logUser = document.querySelector('#user')
+const logPwd = document.querySelector('#password')
+
+logarAcc.addEventListener('click', () => {
+    if (logUser.value === user && logPwd.value === password){
+        console.log('vc logou')
+        return
+    }
+    console.log('Usuário ou senha incorretos.')
+})
