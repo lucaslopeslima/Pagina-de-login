@@ -1,6 +1,8 @@
 console.log('JS on')
+
 let user = ''
 let password = ''
+
 ///////Handle Buttons ///////
 
 const singMode = document.querySelectorAll('.mode')
@@ -8,6 +10,7 @@ const singIn = document.querySelector('#sing-in')
 const singInContent = document.querySelector('.sing-in-content')
 const singUp = document.querySelector('#sing-up')
 const singUpContent = document.querySelector('.sing-up-content')
+const dontHaveAcc = document.querySelector('.dont-have-acc')
 //console.log(singMode)
 singIn.addEventListener('click', () => {
     singUp.className = singUp.className.replace('mode-active', '')
@@ -20,6 +23,14 @@ singIn.addEventListener('click', () => {
     
 })
 singUp.addEventListener('click', () => {
+    singIn.className = singUp.className.replace('mode-active', '')
+    singUp.className += ' mode-active'
+    singInContent.style.display = 'none'
+    singUpContent.style.display = 'block'
+    /* singInContent.style.visibility = 'hidden'
+    singUpContent.style.visibility = 'visible' */
+})
+dontHaveAcc.addEventListener('click', () => {
     singIn.className = singUp.className.replace('mode-active', '')
     singUp.className += ' mode-active'
     singInContent.style.display = 'none'
@@ -66,7 +77,7 @@ logarBtn.addEventListener('click', () => {
 
 
 
-//Create User
+//Create User //////////////////////////////////////
 const createUserBtn = document.querySelector('.create-btn')
 const newUserName = document.querySelector('#create-user')
 const newUserPassword = document.querySelector('#create-password')
