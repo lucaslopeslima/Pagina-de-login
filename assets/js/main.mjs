@@ -64,3 +64,24 @@ logarBtn.addEventListener('click', () => {
 })
 
 
+
+//Create User
+const createUserBtn = document.querySelector('.create-btn')
+const newUserName = document.querySelector('#create-user')
+const newUserPassword = document.querySelector('#create-password')
+const confirmPassword = document.querySelector('#confirm-password')
+createUserBtn.addEventListener('click', createUser)
+function createUser() {
+    if (verifyPassword() == false) {
+        console.log('verify false')
+        return
+    }
+    console.log('deu certo')
+}
+function verifyPassword() {
+    if (newUserPassword.value !== confirmPassword.value) {
+      return false  
+    }
+    
+}
+
