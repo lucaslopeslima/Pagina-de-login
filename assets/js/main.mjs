@@ -88,7 +88,7 @@ function createUser() {
         console.log('verify false')
         return
     }
-    console.log('deu certo')
+    console.log('Usuário criado com sucesso')
     user = newUserName.value
     password = newUserPassword.value
 }

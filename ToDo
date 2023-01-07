@@ -1,21 +1,21 @@
 ## 💻 Projeto
 
-[ ] Criar uma pagina de Log-in
-[ ] Criar uma pagina de Registro
+[x] Criar uma pagina de Log-in
+[x] Criar uma pagina de Registro
 [ ] Criar o banco de dados de usuários
 [ ] Conectar o DB à pagina de log-in
-[ ] Setar, inicialmente, usuario ADMIN senha ADMIN e testar logica.
-[ ] Ao carregar a pagina, buscar nome de usuário no localstorage
+[x] Setar, inicialmente, usuario ADMIN senha ADMIN e testar logica.
+[ x Ao carregar a pagina, buscar nome de usuário no localstorage
 [ ] Validar os campos com JS
-[ ] Verificar se o botão lembrar usuário está ligado
-    [ ] Salvar nome de usuário no localstorage
-[ ] Registrar novos usuários
-[ ] Logar com o usuário
+[x] Verificar se o botão lembrar usuário está ligado
+    [x] Salvar nome de usuário no localstorage
+[x] Registrar novos usuários
+[x] Logar com o usuário
 [ ] 
 [ ] 
 
 ## 📝 Objetivos
-[ ] Aprender a fazer telas de log-in funcionais
+[x] Aprender a fazer telas de log-in funcionais
 [ ] Aprofundar o conhecimento em Firebase
 [ ] Aprender a fazer validações com JS
 [ ] Praticar recursividade
