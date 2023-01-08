@@ -7,6 +7,7 @@
 [x] Setar, inicialmente, usuario ADMIN senha ADMIN e testar logica.
 [x] Ao carregar a pagina, buscar nome de usuário no localstorage
 [ ] Validar os campos com JS
+[ ] Validar email typeMismatch
 [x] Verificar se o botão lembrar usuário está ligado
     [x] Salvar nome de usuário no localstorage
     [ ] Condicionar o local storage apenas após a validação do campo.
