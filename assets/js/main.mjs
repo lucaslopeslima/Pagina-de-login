@@ -81,11 +81,17 @@ const newUserName = document.querySelector('#create-user')
 const newUserPassword = document.querySelector('#create-password')
 const confirmPassword = document.querySelector('#confirm-password')
 createUserBtn.addEventListener('click', createUser)
-function createUser() {
-    if (newUserName.value.length == 0 || newUserPassword.value.length == 0) {
+function createUser(e) {
+    e.preventDefault()
+    /* if (newUserName.value.length == 0 || newUserPassword.value.length == 0) {
+        console.log('Por favor insira os dados.')
+        return
+    } */
+    if (validateFields() === true) {
         console.log('Por favor insira os dados.')
         return
     }
+    //validateFields()
     if (verifyPassword() == false) {
         console.log('verify false')
         return
@@ -108,10 +114,11 @@ const logUser = document.querySelector('#user')
 const logPwd = document.querySelector('#password')
 
 logarAcc.addEventListener('click', () => {
-    if (logUser.value.length == 0 || logPwd.value.length == 0) {
+    /* if (logUser.value.length == 0 || logPwd.value.length == 0) {
         console.log('Entre com um usuário e uma senha')
         return
-    }
+    } */
+    validateFields()
     if (user != undefined && password != undefined && logUser.value === user && logPwd.value === password){
         console.log('vc logou')
         return
@@ -121,8 +128,26 @@ logarAcc.addEventListener('click', () => {
 
 
 //Validate fileds////////////////////////////////////
+const requiredFileds = document.querySelectorAll('[required]')
+console.log(requiredFileds)
+function validateFields() {
+    requiredFileds.forEach((field) => {
+        console.log(field)
+        field.addEventListener('invalid', () => {
+            console.log('campo inválido')
+            return true
+        })
+    })
+}
 
-logarBtn.addEventListener("click", validate);
+
+
+
+
+
+
+
+/* logarBtn.addEventListener("click", validate);
 
 function validate(e) {
     e.preventDefault();
@@ -137,7 +162,7 @@ function validate(e) {
     nameError.setAttribute("aria-invalid", true);
   }
   return valid;
-}
+} */
 
 
 /* const submit = document.getElementById("submit");
