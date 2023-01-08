@@ -5,7 +5,7 @@
 [ ] Criar o banco de dados de usuários
 [ ] Conectar o DB à pagina de log-in
 [x] Setar, inicialmente, usuario ADMIN senha ADMIN e testar logica.
-[ x Ao carregar a pagina, buscar nome de usuário no localstorage
+[x] Ao carregar a pagina, buscar nome de usuário no localstorage
 [ ] Validar os campos com JS
 [x] Verificar se o botão lembrar usuário está ligado
     [x] Salvar nome de usuário no localstorage
