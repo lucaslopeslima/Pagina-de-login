@@ -1,7 +1,7 @@
 console.log('JS on')
 
-let user = ''
-let password = ''
+let user
+let password
 
 ///////Handle Buttons ///////
 
@@ -82,6 +82,10 @@ const newUserPassword = document.querySelector('#create-password')
 const confirmPassword = document.querySelector('#confirm-password')
 createUserBtn.addEventListener('click', createUser)
 function createUser() {
+    if (newUserName.value.length == 0 || newUserPassword.value.length == 0) {
+        console.log('Por favor insira os dados.')
+        return
+    }
     if (verifyPassword() == false) {
         console.log('verify false')
         return
@@ -104,7 +108,11 @@ const logUser = document.querySelector('#user')
 const logPwd = document.querySelector('#password')
 
 logarAcc.addEventListener('click', () => {
-    if (logUser.value === user && logPwd.value === password){
+    if (logUser.value.length == 0 || logPwd.value.length == 0) {
+        console.log('Entre com um usuário e uma senha')
+        return
+    }
+    if (user != undefined && password != undefined && logUser.value === user && logPwd.value === password){
         console.log('vc logou')
         return
     }
