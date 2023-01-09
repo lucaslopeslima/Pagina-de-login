@@ -93,7 +93,7 @@ function createUser(e) {
     }
     //validateFields()
     if (verifyPassword() == false) {
-        console.log('verify false')
+        console.log('Senhas não são iguais')
         return
     }
     console.log('Usuário criado com sucesso')
