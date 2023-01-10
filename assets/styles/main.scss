@@ -108,7 +108,9 @@ main{
                         }
                         &:hover::before{
                         width: 100%;
-                        }
+                    }
+                    opacity: 0;
+                    animation: opacityEffect 1s ease-in-out 2.5s forwards;
                 }
                 .mode-active{
                     position: relative;
@@ -126,6 +128,7 @@ main{
             .mode-content{
                 position: relative;
                 //background-color: #00800022;
+                
             }
             
             

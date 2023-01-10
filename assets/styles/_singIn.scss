@@ -1,8 +1,9 @@
 .sing-in-content, .sing-up-content{
+    opacity: 0;
+    animation: opacityEffect 1s ease-in-out 3s forwards;
     .input-container{
         //background-color: red;
-        opacity: 1;
-        //animation: opacityEffect 1s ease-in-out 3s forwards;
+        
         padding: 60px 10px;
         .input{
             position: relative;
