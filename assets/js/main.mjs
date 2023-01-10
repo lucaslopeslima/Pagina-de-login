@@ -58,7 +58,7 @@ function rememberUser() {
         sphereToggle.className += ' remember-user-name-active'
     }
 }
-rememberUser()
+//rememberUser()
 sphereToggle.addEventListener('click', () => {
     sphereToggle.classList.toggle('remember-user-name-active')
 })
@@ -82,29 +82,33 @@ const newUserPassword = document.querySelector('#create-password')
 const confirmPassword = document.querySelector('#confirm-password')
 createUserBtn.addEventListener('click', createUser)
 function createUser(e) {
-    e.preventDefault()
-    /* if (newUserName.value.length == 0 || newUserPassword.value.length == 0) {
+    e.preventDefault() 
+    if (newUserName.value.length == 0 || newUserPassword.value.length == 0) {
         console.log('Por favor insira os dados.')
-        return
-    } */
-    if (validateFields() === true) {
-        console.log('Por favor insira os dados.')
+        alert('Por favor insira os dados.')
         return
     }
-    //validateFields()
+    if (validateEmail(newUserName.value) == false) {
+        console.log('email invalido')
+        alert('email invalido')
+        return
+    }
     if (verifyPassword() == false) {
         console.log('Senhas não são iguais')
+        alert('Senhas não são iguais')
         return
     }
     console.log('Usuário criado com sucesso')
+    alert('Usuário criado com sucesso')
     user = newUserName.value
     password = newUserPassword.value
+
+    e.preventDefault() 
 }
 function verifyPassword() {
     if (newUserPassword.value !== confirmPassword.value) {
       return false  
     }
-    
 }
 
 
@@ -113,74 +117,54 @@ const logarAcc = document.querySelector('.logar-btn')
 const logUser = document.querySelector('#user')
 const logPwd = document.querySelector('#password')
 
-logarAcc.addEventListener('click', () => {
-    /* if (logUser.value.length == 0 || logPwd.value.length == 0) {
+logarAcc.addEventListener('click', (e) => {
+    if (logUser.value.length == 0 || logPwd.value.length == 0) {
         console.log('Entre com um usuário e uma senha')
+        alert('Entre com um usuário e uma senha')
         return
-    } */
-    validateFields()
+    }
+    if (validateEmail(logUser.value) == false) {
+        console.log('email invalido')
+        alert('email invalido')
+        return
+    }
     if (user != undefined && password != undefined && logUser.value === user && logPwd.value === password){
         console.log('vc logou')
+        rememberUser()
+        alert('vc logou')
         return
     }
     console.log('Usuário ou senha incorretos.')
+    alert('Usuário ou senha incorretos.')
+
+    //e.preventDefault()
 })
 
 
 //Validate fileds////////////////////////////////////
-const requiredFileds = document.querySelectorAll('[required]')
-console.log(requiredFileds)
+const requiredFields = document.querySelectorAll('[required]')
+console.log(requiredFields)
 function validateFields() {
-    requiredFileds.forEach((field) => {
+    requiredFields.forEach((field) => {
         console.log(field)
-        field.addEventListener('invalid', () => {
-            console.log('campo inválido')
-            return true
+        field.addEventListener('onchange', () => {
+            if (!field) {
+                console.log('campo invalido')
+            } else if (validateEmail(newUserName)) {
+                console.log('campo valido')
+            }
         })
     })
 }
 
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
 
-
-
-
-
-
-
-/* logarBtn.addEventListener("click", validate);
-
-function validate(e) {
-    e.preventDefault();
-    
-  let valid = true;
-
-  if (!logUser.value) {
-    const nameError = document.getElementById("nameError");
-    nameError.classList.add("visible");
-    logUser.classList.add("invalid");
-    nameError.setAttribute("aria-hidden", false);
-    nameError.setAttribute("aria-invalid", true);
-  }
-  return valid;
-} */
-
-
-/* const submit = document.getElementById("submit");
-
-submit.addEventListener("click", validate);
-
-function validate(e) {
-  e.preventDefault();
-
-  const firstNameField = document.getElementById("firstname");
-  let valid = true;
-
-  if (!firstNameField.value) {
-    const nameError = document.getElementById("nameError");
-    nameError.classList.add("visible");
-    firstNameField.classList.add("invalid");
-    nameError.setAttribute("aria-hidden", false);
-    nameError.setAttribute("aria-invalid", true);
-  }
-  return valid;
-} */
+newUserName.addEventListener('change', () => {
+    console.log(validateEmail(newUserName.value))
+    if (validateEmail(newUserName.value) == true) {
+        console.log('email valido')
+    }
+})
