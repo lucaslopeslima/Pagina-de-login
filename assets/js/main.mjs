@@ -18,6 +18,7 @@ singIn.addEventListener('click', () => {
     singUpContent.style.display = 'none'
     singInContent.style.display = 'block'
     singInContent.style.opacity = '1'
+    singInContent.style.animation = 'none'
     /* singUpContent.style.visibility = 'hidden'
     singInContent.style.visibility = 'visible' */
     
@@ -29,6 +30,7 @@ singUp.addEventListener('click', () => {
     singInContent.style.display = 'none'
     singUpContent.style.display = 'block'
     singUpContent.style.opacity = '1'
+    singUpContent.style.animation = 'none'
     /* singInContent.style.visibility = 'hidden'
     singUpContent.style.visibility = 'visible' */
 })
@@ -37,6 +39,8 @@ dontHaveAcc.addEventListener('click', () => {
     singUp.className += ' mode-active'
     singInContent.style.display = 'none'
     singUpContent.style.display = 'block'
+    singUpContent.style.opacity = '1'
+    singUpContent.style.animation = 'none'
     /* singInContent.style.visibility = 'hidden'
     singUpContent.style.visibility = 'visible' */
 })
