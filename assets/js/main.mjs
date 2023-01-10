@@ -82,7 +82,6 @@ const newUserPassword = document.querySelector('#create-password')
 const confirmPassword = document.querySelector('#confirm-password')
 createUserBtn.addEventListener('click', createUser)
 function createUser(e) {
-    e.preventDefault() 
     if (newUserName.value.length == 0 || newUserPassword.value.length == 0) {
         console.log('Por favor insira os dados.')
         alert('Por favor insira os dados.')
@@ -103,7 +102,7 @@ function createUser(e) {
     user = newUserName.value
     password = newUserPassword.value
 
-    e.preventDefault() 
+    //e.preventDefault() 
 }
 function verifyPassword() {
     if (newUserPassword.value !== confirmPassword.value) {
@@ -142,7 +141,21 @@ logarAcc.addEventListener('click', (e) => {
 
 
 //Validate fileds////////////////////////////////////
-const requiredFields = document.querySelectorAll('[required]')
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+/* newUserName.addEventListener('change', () => {
+    console.log(validateEmail(newUserName.value))
+    if (validateEmail(newUserName.value) == true) {
+        console.log('email valido')
+    }
+}) */
+
+
+
+/* const requiredFields = document.querySelectorAll('[required]')
 console.log(requiredFields)
 function validateFields() {
     requiredFields.forEach((field) => {
@@ -155,16 +168,4 @@ function validateFields() {
             }
         })
     })
-}
-
-function validateEmail(email) {
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
-}
-
-newUserName.addEventListener('change', () => {
-    console.log(validateEmail(newUserName.value))
-    if (validateEmail(newUserName.value) == true) {
-        console.log('email valido')
-    }
-})
+} */
