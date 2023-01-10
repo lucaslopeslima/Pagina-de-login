@@ -144,6 +144,9 @@ main .form-wrap .form .mode-wrap .mode {
   color: var(--color-font);
   text-transform: uppercase;
   position: relative;
+  opacity: 0;
+  -webkit-animation: opacityEffect 1s ease-in-out 2.5s forwards;
+          animation: opacityEffect 1s ease-in-out 2.5s forwards;
 }
 
 main .form-wrap .form .mode-wrap .mode::before {
@@ -180,8 +183,13 @@ main .form-wrap .form .mode-content {
   position: relative;
 }
 
+.sing-in-content, .sing-up-content {
+  opacity: 0;
+  -webkit-animation: opacityEffect 1s ease-in-out 3s forwards;
+          animation: opacityEffect 1s ease-in-out 3s forwards;
+}
+
 .sing-in-content .input-container, .sing-up-content .input-container {
-  opacity: 1;
   padding: 60px 10px;
 }
 
