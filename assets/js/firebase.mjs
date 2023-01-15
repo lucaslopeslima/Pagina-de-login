@@ -1,16 +1,10 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
-import firebaseConfig from "fireKey"
-
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://firebase.google.com/docs/web/learn-more#config-object
-const firebaseConfig = {
-    // ...
-};
+import { firebaseConfig } from './fireKey.mjs'
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-
+let colecao = 'teste'
 // Initialize Cloud Firestore and get a reference to the service
 const db = firebase.firestore();
+console.log(db)
