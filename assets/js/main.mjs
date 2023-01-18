@@ -1,4 +1,4 @@
-console.log('JS on')
+console.log('main JS on')
 
 let user
 let password
