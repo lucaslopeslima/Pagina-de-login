@@ -26,7 +26,8 @@
 [ ] 
 
 ## 🚀 Aprendizados
- - Efeito de background bi-filter
+ - Efeito de background dual-filter
+ - Para usar IMPORTS em JS, é preciso setar o type para type="module" no html
 
 
 
