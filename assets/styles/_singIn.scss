@@ -3,7 +3,7 @@
     animation: opacityEffect 1s ease-in-out 3s forwards;
     .input-container{
         //background-color: red;
-        
+        height: 465px;
         padding: 60px 10px;
         .input{
             position: relative;
@@ -81,7 +81,7 @@
     }
     .dont-have-acc{
         //background-color: red;
-        margin-right: 70px;
+        margin-right: 61px;
         color: var(--color-font-sub);
         text-align: end;
         font-style: italic;

@@ -190,6 +190,7 @@ main .form-wrap .form .mode-content {
 }
 
 .sing-in-content .input-container, .sing-up-content .input-container {
+  height: 465px;
   padding: 60px 10px;
 }
 
@@ -284,7 +285,7 @@ main .form-wrap .form .mode-content {
 }
 
 .sing-in-content .dont-have-acc, .sing-up-content .dont-have-acc {
-  margin-right: 70px;
+  margin-right: 61px;
   color: var(--color-font-sub);
   text-align: end;
   font-style: italic;
