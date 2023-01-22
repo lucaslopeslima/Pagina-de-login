@@ -13,7 +13,7 @@ const auth = firebase.auth();
 const db = getFirestore(app);
 const auth = getAuth(app); */
 
-
+//npm install firebase
 
 
 /* 
