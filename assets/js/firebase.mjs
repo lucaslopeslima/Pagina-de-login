@@ -7,6 +7,7 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; */
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore()
+const auth = firebase.auth();
 
 /* const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
