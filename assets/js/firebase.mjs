@@ -1,13 +1,16 @@
 console.log('firebase On')
-
 import { firebaseConfig } from './fireKey.mjs';
-import { initializeApp } from 'firebase/app';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
+/* import { firebaseConfig } from './fireKey.mjs';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; */
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore()
 
-const app = initializeApp(firebaseConfig);
+/* const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const auth = getAuth(app);
+const auth = getAuth(app); */
 
 
 
