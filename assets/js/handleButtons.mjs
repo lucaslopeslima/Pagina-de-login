@@ -42,7 +42,23 @@ dontHaveAcc.addEventListener('click', () => {
     singUpContent.style.visibility = 'visible' */
 })
 
-
+//Remember user////////////////////////////////////
+const sphereToggle = document.querySelector('.remember-user-name')
+const inputEmail = document.querySelector('#user')
+inputEmail.value = localStorage.getItem('userName')
+if (localStorage.getItem('userName')) {
+    sphereToggle.className += ' remember-user-name-active'
+}
+function rememberUser() {
+    if (sphereToggle.classList.contains('remember-user-name-active')) {
+        //console.log('tem remember-user-name-active')
+        localStorage.setItem('userName', inputEmail.value);
+    }
+}
+//rememberUser()
+sphereToggle.addEventListener('click', () => {
+    sphereToggle.classList.toggle('remember-user-name-active')
+})
 
 /* for (let i = 0; i < singMode.length; i++){
     singMode[i].addEventListener('click', ()=>{
