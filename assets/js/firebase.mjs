@@ -1,13 +1,117 @@
 console.log('firebase On')
 import { firebaseConfig } from './fireKey.mjs';
 
-/* import { firebaseConfig } from './fireKey.mjs';
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; */
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore()
 const auth = firebase.auth();
+//Create User
+const createUserBtn = document.querySelector('.create-btn')
+const newUserName = document.querySelector('#create-user').value
+const newUserPassword = document.querySelector('#create-password').value
+const confirmPassword = document.querySelector('#confirm-password').value
+//Log In User
+const logarAcc = document.querySelector('.logar-btn')
+const logUser = document.querySelector('#user')
+const logPwd = document.querySelector('#password')
+
+
+
+function createNewUser(email, password, password2) {
+  console.log("iniciando criação de usuário...")
+  if (validateNewUser(email, password, password2)) {
+    auth.createUserWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // Signed in 
+      var user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ..
+    });
+  }
+  console.log("Validação reprovada")
+  return
+  
+}
+
+
+function logInUser() {
+  console.log("iniciando login...")
+  let logUserI = logUser.value
+  let logPwdI = logPwd.value
+  console.log(logUserI)
+  console.log(logPwdI)
+  console.log(validateEmail(logUserI))
+  console.log(validatePassword(logPwdI))
+  if (validateEmail(logUserI)&&validatePassword(logPwdI)) {
+    auth.signInWithEmailAndPassword(logUserI, logPwdI)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      // ...
+      console.log('Login bem sucedido')
+      rememberUser()
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+    return
+  }
+  console.log("Login falhou")
+  return
+  
+}
+
+
+createUserBtn.addEventListener('click', createNewUser)
+
+logarAcc.addEventListener('click', logInUser)
+
+
+
+/* logarAcc.addEventListener('click', () => {
+  console.log("iniciando login...")
+  console.log(logUser)
+  console.log(validateEmail(logUser))
+  console.log(logPwd)
+  console.log(validatePassword(logPwd))
+  
+  if (validateEmail(logUser)&&validatePassword(logPwd)) {
+    auth.signInWithEmailAndPassword(logUser, logPwd)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      // ...
+      console.log('Login bem sucedido')
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+  }
+  console.log("Login falhou")
+  return
+}) */
+
+
+
+
+
+
+
+/* let string = 'hello world'
+function hello(prop) {
+  console.log(prop)
+  console.log('prop 2')
+}
+logarAcc.addEventListener('click', hello(string)) */
+
+
+
+
 
 
 

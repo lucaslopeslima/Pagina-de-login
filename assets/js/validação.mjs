@@ -12,9 +12,9 @@ function validatePassword(password) {
 }
 
 function validateNewUser(email, password1, password2) {
-    if (validateEmail(email) == true) {
-        if (validatePassword(password1) == true) {
-            if (validatePassword(password2) == true) {
+    if (validateEmail(email)) {
+        if (validatePassword(password1)) {
+            if (validatePassword(password2)) {
                 if (password1 === password2) {
                     console.log('Validação de novo usuario completa')
                     return true
@@ -33,11 +33,14 @@ function validateNewUser(email, password1, password2) {
 }
 
 
+/* 
+//TESTE VALIDAÇÃO
 let email = 'lucas@gmail.com'
 let psw1 = '123456'
-let psw2 = '123467'
+let psw2 = '123456'
 
-validateNewUser(email, psw1, psw2)
+validateNewUser(email, psw1, psw2) 
+*/
 
 /**
  
