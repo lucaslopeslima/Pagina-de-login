@@ -38,3 +38,35 @@ let psw1 = '123456'
 let psw2 = '123467'
 
 validateNewUser(email, psw1, psw2)
+
+/**
+ 
+ 
+ function validateNewUser (email, pass, pass2){
+  if(!validateEmail(email)) {
+    console.log('msg de erro')
+    return false
+  }
+  {...}
+  if(!validateX(X)){
+    console.log('msg') 
+    return false
+  }
+  return true
+} 
+
+if(true) console.log('é verdadeiro')
+if(!true) console.log('é falso, vou aparecer')
+
+const valorTrue = true;
+const valorFalse = false;
+
+if(valorTrue) console.log('é verdadeiro, vou aparecer')
+if(!valorTrue) console.log('é falso, não vou aparecer')
+
+if(valorFalse) console.log('é falso, não vou aparecer')
+if(!valorFalse) console.log('é verdadeiro, vou aparecer')
+
+
+
+ */
