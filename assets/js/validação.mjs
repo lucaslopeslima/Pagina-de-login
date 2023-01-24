@@ -20,15 +20,19 @@ function validateNewUser(email, password1, password2) {
                     return true
                 }
                 console.log('Senhas devem ser iguais')
+                alert('Senhas devem ser iguais.')
                 return false                
             }
             console.log('Senha 2 deve ter pelo menos 6 digitos')
+            alert('Senha 2 deve ter pelo menos 6 digitos.')
             return false
         } 
-        console.log('Senha 1 deve ter pelo menos 6 digitos')
+        console.log('Senha 1 deve ter pelo menos 6 digitos.')
+        alert('Senha 1 deve ter pelo menos 6 digitos.')
         return false
     }
     console.log('Email Invalido')
+    alert('Email Invalido')
     return false
 }
 

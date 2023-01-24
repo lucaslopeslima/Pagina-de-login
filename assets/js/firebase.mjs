@@ -27,13 +27,14 @@ function createNewUser() {
       // Signed in 
       var user = userCredential.user;
       // ...
+      console.log('Usuario criado com sucesso')
+      alert('Usuario criado com sucesso.')
     })
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
       // ..
     });
-    console.log('Usuario criado com sucesso')
     return
   }
   console.log("Validação reprovada")
@@ -58,6 +59,7 @@ function logInUser() {
       // ...
       console.log('Login bem sucedido')
       rememberUser()
+      alert('Vc logou com sucesso.')
     })
     .catch((error) => {
       var errorCode = error.code;
