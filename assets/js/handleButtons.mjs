@@ -17,9 +17,7 @@ singIn.addEventListener('click', () => {
     singInContent.style.opacity = '1'
     singInContent.style.animation = 'none'
     /* singUpContent.style.visibility = 'hidden'
-    singInContent.style.visibility = 'visible' */
-    
-    
+    singInContent.style.visibility = 'visible' */   
 })
 singUp.addEventListener('click', () => {
     singIn.className = singUp.className.replace('mode-active', '')
