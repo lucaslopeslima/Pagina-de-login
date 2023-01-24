@@ -6,9 +6,9 @@ const db = firebase.firestore()
 const auth = firebase.auth();
 //Create User
 const createUserBtn = document.querySelector('.create-btn')
-const newUserName = document.querySelector('#create-user').value
-const newUserPassword = document.querySelector('#create-password').value
-const confirmPassword = document.querySelector('#confirm-password').value
+const newUserName = document.querySelector('#create-user')
+const newUserPassword = document.querySelector('#create-password')
+const confirmPassword = document.querySelector('#confirm-password')
 //Log In User
 const logarAcc = document.querySelector('.logar-btn')
 const logUser = document.querySelector('#user')
@@ -16,8 +16,11 @@ const logPwd = document.querySelector('#password')
 
 
 
-function createNewUser(email, password, password2) {
+function createNewUser() {
   console.log("iniciando criação de usuário...")
+  let email = newUserName.value
+  let password = newUserPassword.value
+  let password2 = confirmPassword.value
   if (validateNewUser(email, password, password2)) {
     auth.createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
@@ -30,6 +33,8 @@ function createNewUser(email, password, password2) {
       var errorMessage = error.message;
       // ..
     });
+    console.log('Usuario criado com sucesso')
+    return
   }
   console.log("Validação reprovada")
   return
@@ -57,6 +62,7 @@ function logInUser() {
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
+      console.log("Login falhou. Usuário ou senha incorretos.")
     });
     return
   }
