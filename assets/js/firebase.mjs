@@ -47,11 +47,11 @@ function logInUser() {
   console.log("iniciando login...")
   let logUserI = logUser.value
   let logPwdI = logPwd.value
-  console.log(logUserI)
-  console.log(logPwdI)
-  console.log(validateEmail(logUserI))
-  console.log(validatePassword(logPwdI))
-  if (validateEmail(logUserI)&&validatePassword(logPwdI)) {
+  //console.log(logUserI)
+  //console.log(logPwdI)
+  //console.log(validateEmail(logUserI))
+  //console.log(validatePassword(logPwdI))
+  if (validadeLogIn(logUserI, logPwdI)) {
     auth.signInWithEmailAndPassword(logUserI, logPwdI)
     .then((userCredential) => {
       // Signed in
