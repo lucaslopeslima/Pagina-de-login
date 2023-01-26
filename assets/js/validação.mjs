@@ -16,7 +16,7 @@ function validateNewUser(email, password1, password2) {
         if (validatePassword(password1)) {
             if (validatePassword(password2)) {
                 if (password1 === password2) {
-                    console.log('Validação de novo usuario completa')
+                    console.log('Validação de novo usuario bem sucedida')
                     return true
                 }
                 console.log('Senhas devem ser iguais')
@@ -35,7 +35,20 @@ function validateNewUser(email, password1, password2) {
     alert('Email Invalido')
     return false
 }
-
+function validadeLogIn(email, password) {
+    if (validateEmail(email)) {
+        if (validatePassword(password)) {
+            console.log('Validação de Log In bem sucedida')
+            return true
+        }
+        console.log('Senha deve ter pelo menos 6 digitos')
+        alert('Senha deve ter pelo menos 6 digitos.')
+         return false
+    }
+    console.log('Email Invalido')
+    alert('Email Invalido')
+    return false
+}
 
 /* 
 //TESTE VALIDAÇÃO
