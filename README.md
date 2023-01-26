@@ -11,12 +11,12 @@
   - JavaScript
   - HTML
   - CSS
-  - Firebase
+  - Firebase v8
 - Setup
   - HTML
   - Scss
   - JS
-  - Firebase Auth
+  - Firebase Auth v8
   - Google Fonts
 - Criação do projeto
   - Estrutura de pasta
