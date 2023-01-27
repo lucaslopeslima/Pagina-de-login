@@ -65,6 +65,7 @@ function logInUser() {
       var errorCode = error.code;
       var errorMessage = error.message;
       console.log("Login falhou. Usuário ou senha incorretos.")
+      alert("Login falhou. Usuário ou senha incorretos.")
     });
     return
   }
