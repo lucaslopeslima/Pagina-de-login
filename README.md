@@ -18,6 +18,7 @@
   - JS
   - Firebase Auth v8
   - Google Fonts
+  - MIME type mapping (server side)
 - Criação do projeto
   - Estrutura de pasta
    - Estrutura de arquivos
@@ -31,3 +32,4 @@
   - Ao carregar a página o sistema busca pelo usuário salvo
   - 'Dont have account' levando diretamente para a página de SIN UP.
   - Nova validação
+  - Confiração MIME type mapping do servidor para enviar arquivos .mjs como application/javascript.
