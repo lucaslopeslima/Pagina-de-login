@@ -14,18 +14,18 @@
 [x] Logar com o usuário
 
 # Fase-2
-[ ] Criar o banco de dados de usuários
+[x] Criar o banco de dados de usuários
 [x] Conectar o Firebase à pagina de log-in
-[ ] Conectar Firebase Auth
+[x] Conectar Firebase Auth
 [ ] Testar Token
 [ ] 
 
 ## 📝 Objetivos
 [x] Aprender a fazer telas de log-in funcionais
-[ ] Aprofundar o conhecimento em Firebase
+[x] Aprofundar o conhecimento em Firebase
 [x] Aprender a fazer validações com JS
 [ ] Praticar recursividade
-[ ] 
+[ ] Refatorar código
 [ ] 
 [ ] 
 
