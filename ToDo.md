@@ -33,6 +33,8 @@
  - Efeito de background dual-filter
  - Para usar IMPORTS em JS, não esquecer de setar o type para type="module" no html
  - Implementar Firebase Auth
+ - Refatorar código
+ - Recursividade
 
 
 
