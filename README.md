@@ -12,7 +12,6 @@
   - HTML
   - CSS
   - Firebase v8
-  - teste
 - Setup
   - HTML
   - Scss
