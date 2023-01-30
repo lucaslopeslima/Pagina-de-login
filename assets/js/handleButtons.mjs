@@ -15,9 +15,7 @@ singIn.addEventListener('click', () => {
     singUpContent.style.display = 'none'
     singInContent.style.display = 'block'
     singInContent.style.opacity = '1'
-    singInContent.style.animation = 'none'
-    /* singUpContent.style.visibility = 'hidden'
-    singInContent.style.visibility = 'visible' */   
+    singInContent.style.animation = 'none' 
 })
 singUp.addEventListener('click', () => {
     singIn.className = singUp.className.replace('mode-active', '')
@@ -26,8 +24,6 @@ singUp.addEventListener('click', () => {
     singUpContent.style.display = 'block'
     singUpContent.style.opacity = '1'
     singUpContent.style.animation = 'none'
-    /* singInContent.style.visibility = 'hidden'
-    singUpContent.style.visibility = 'visible' */
 })
 dontHaveAcc.addEventListener('click', () => {
     singIn.className = singUp.className.replace('mode-active', '')
@@ -36,8 +32,6 @@ dontHaveAcc.addEventListener('click', () => {
     singUpContent.style.display = 'block'
     singUpContent.style.opacity = '1'
     singUpContent.style.animation = 'none'
-    /* singInContent.style.visibility = 'hidden'
-    singUpContent.style.visibility = 'visible' */
 })
 
 //Remember user////////////////////////////////////
