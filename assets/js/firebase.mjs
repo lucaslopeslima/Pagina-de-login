@@ -17,7 +17,7 @@ const logPwd = document.querySelector('#password')
 
 
 function createNewUser() {
-  console.log("iniciando criação de usuário...")
+  console.log("Iniciando criação de usuário...")
   let email = newUserName.value
   let password = newUserPassword.value
   let password2 = confirmPassword.value
