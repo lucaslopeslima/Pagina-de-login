@@ -21,20 +21,20 @@ function handleMode() {
         })
     }
 
-    dontHaveAcc.addEventListener('click', () => {
-        singIn.className = singUp.className.replace('mode-active', '')
-        singUp.className += ' mode-active'
-        singInContent.style.display = 'none'
-        singUpContent.style.display = 'block'
-        singUpContent.style.opacity = '1'
-        singUpContent.style.animation = 'none'
-    })
     
+
 }
 handleMode()
 //o This não funciona em arrowfunction
 
-
+/* dontHaveAcc.addEventListener('click', () => {
+    singIn.className = singUp.className.replace('mode-active', '')
+    singUp.className += ' mode-active'
+    singInContent.style.display = 'none'
+    singUpContent.style.display = 'block'
+    singUpContent.style.opacity = '1'
+    singUpContent.style.animation = 'none'
+}) */
 
 
 
