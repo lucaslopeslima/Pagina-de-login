@@ -18,6 +18,9 @@ function handleMode() {
             this.className += ' mode-active'
             console.log('currentActiveMode',currentActiveMode)
             console.log('this', this) //o This não funciona em arrowfunction
+
+            //Alternar o conteúdo de cada this
+            
         })
     }
 
