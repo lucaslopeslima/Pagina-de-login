@@ -20,6 +20,7 @@ function handleMode() {
             console.log('this', this)
         })
     }
+
     dontHaveAcc.addEventListener('click', () => {
         singIn.className = singUp.className.replace('mode-active', '')
         singUp.className += ' mode-active'
@@ -28,6 +29,7 @@ function handleMode() {
         singUpContent.style.opacity = '1'
         singUpContent.style.animation = 'none'
     })
+    
 }
 handleMode()
 //o This não funciona em arrowfunction
