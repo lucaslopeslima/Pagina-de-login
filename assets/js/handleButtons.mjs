@@ -17,7 +17,7 @@ function handleMode() {
             currentActiveMode[0].className = currentActiveMode[0].className.replace('mode-active', '')
             this.className += ' mode-active'
             console.log('currentActiveMode',currentActiveMode)
-            console.log('this', this)
+            console.log('this', this) //o This não funciona em arrowfunction
         })
     }
 
@@ -25,7 +25,7 @@ function handleMode() {
 
 }
 handleMode()
-//o This não funciona em arrowfunction
+
 
 /* dontHaveAcc.addEventListener('click', () => {
     singIn.className = singUp.className.replace('mode-active', '')
