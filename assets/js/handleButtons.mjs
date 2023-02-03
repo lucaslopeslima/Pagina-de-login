@@ -21,6 +21,7 @@ function handleMode() {
 
             //Alternar o conteúdo de cada this
             
+            
         })
     }
 
